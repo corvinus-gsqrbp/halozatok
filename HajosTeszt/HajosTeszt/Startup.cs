@@ -26,6 +26,11 @@ namespace HajosTeszt
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseHttpsRedirection();
+
+            app.UseDefaultFiles();
+            app.UseStaticFiles(); //A sorrend fontos!
+
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
