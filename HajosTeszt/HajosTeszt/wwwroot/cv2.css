@@ -1,0 +1,127 @@
+﻿body {
+}
+body{
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: bold;
+    text-align: center;
+}
+
+#article,
+#aside,
+#footer,
+#header,
+#nav {
+    padding: 25px;
+}
+
+#header {
+    background-color: pink;
+}
+
+#nav {
+    background: silver;
+}
+
+#article {
+    text-align: center;
+    background: gold;
+}
+
+#aside {
+    background-color: lightgreen;
+}
+
+#footer {
+    background: hotpink;
+}
+
+#nav {
+    display: flex;
+}
+
+    #nav a {
+        flex: 1 1 auto;
+        text-decoration: none;
+        color: black;
+    }
+
+@media screen and (min-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        max-width: 1500px;
+        margin: auto;
+    }
+
+    #main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #nav,
+    #header {
+        order: -1;
+    }
+
+    #article {
+        flex: 1 1 75%;
+    }
+
+    #aside {
+        flex: 1 1 25%;
+    }
+}
+
+#tarto
+div {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid fuchsia;
+    border-radius: 25px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+a {
+    background-color: blue;
+    color: white;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+    a:hover {
+        background-color: fuchsia;
+    }
+
+span {
+    font-weight: bold;
+    font-style: italic;
+    color: fuchsia;
+    font-size: 40px;
+}
+
+#listak {
+    background-color: lightgrey;
+    text-align: center;
+}
+
+.megisfeher {
+    background-color: white;
+    border-radius: 25px;
+    width: 100px;
+    text-align: center;
+}
+
+.sorrendi {
+    font-style: italic
+}
+
+img {
+    display: block;
+    margin: auto;
+}
